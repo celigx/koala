@@ -1,11 +1,36 @@
+body
+  margin: 0
+
+button
+  background: none
+  border: none
+  cursor: pointer
+
 .container
   display: flex
   align-items: center
   justify-content: center
+  flex-direction: column
   height: 100vh
 
-.wrapper
-  width: 500px
-  height: 500px
-  border-radius: 50%
-  overflow: hidden
+  .wrapper
+    width: 500px
+    height: 500px
+    border-radius: 50%
+    overflow: hidden
+
+  .controls
+    display: flex
+    margin: 40px 0 0 0
+
+    .hatControl,
+    .glassesControl,
+    .tieControl
+      background: #64b0c9
+      width: 80px
+      height: 80px
+      border-radius: 50%
+      margin: 0 10px
+      transition: all 0.2s ease-in-out
+      &:hover
+        background: #44A4C5

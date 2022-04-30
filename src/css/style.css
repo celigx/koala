@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,12 +18,37 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
 }
-
-.wrapper {
+.container .wrapper {
   width: 500px;
   height: 500px;
   border-radius: 50%;
   overflow: hidden;
+}
+.container .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0 0 0;
+}
+.container .controls .hatControl,
+.container .controls .glassesControl,
+.container .controls .tieControl {
+  background: #64b0c9;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.container .controls .hatControl:hover,
+.container .controls .glassesControl:hover,
+.container .controls .tieControl:hover {
+  background: #44A4C5;
 }
