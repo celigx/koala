@@ -34,6 +34,14 @@ const watch = async () => {
   gulp.watch("src/js/**/*.js").on("change", browserSync.reload);
 }
 
+const moveHTML = async () => {
+  return gulp.src("src/*.html").pipe(gulp.dest("dist/"));
+};
+
+const moveAssets = async () => {
+  return gulp.src("src/assets/*.png").pipe(gulp.dest("dist/assets"));
+};
+
 const minifyCSS = async () => {
   return gulp.src("src/css/*.css").pipe(cleanCSS()).pipe(gulp.dest("dist/css"));
 };
@@ -43,4 +51,4 @@ const minifyJS = async () => {
 };
 
 gulp.task("default", gulp.parallel(style, watch));
-gulp.task("build", gulp.parallel(minifyCSS, minifyJS));
+gulp.task("build", gulp.parallel(moveHTML, moveAssets, minifyCSS, minifyJS));
