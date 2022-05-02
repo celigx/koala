@@ -1,12 +1,13 @@
 {
   "name": "koala",
+  "homepage": "https://celigx.github.io/koala",
   "version": "1.0.0",
   "description": "web page",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "CI=false && gulp build"
   },
-  "author": "Celiox",
+  "author": "Celigx",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.9",
