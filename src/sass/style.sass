@@ -46,3 +46,22 @@ button
 #tie
   transform: translate(0, 200px)
   transition: transform 0.4s ease-in-out
+
+@media screen and ( max-width: 578px )
+  .container
+    .wrapper
+      width: 300px
+      height: 300px
+
+      .character
+        svg
+          width: 300px
+          height: 340px
+
+    .controls
+      .hatControl,
+      .glassesControl,
+      .tieControl
+        
+        &:hover
+          background: #64b0c9

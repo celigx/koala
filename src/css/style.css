@@ -79,3 +79,19 @@ button {
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
+
+@media screen and (max-width: 578px) {
+  .container .wrapper {
+    width: 300px;
+    height: 300px;
+  }
+  .container .wrapper .character svg {
+    width: 300px;
+    height: 340px;
+  }
+  .container .controls .hatControl:hover,
+.container .controls .glassesControl:hover,
+.container .controls .tieControl:hover {
+    background: #64b0c9;
+  }
+}
