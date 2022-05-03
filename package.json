@@ -1,7 +1,7 @@
 {
   "name": "koala",
   "homepage": "https://celigx.github.io/koala",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "web page",
   "main": "gulpfile.js",
   "scripts": {
