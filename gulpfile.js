@@ -39,7 +39,7 @@ const moveHTML = async () => {
 };
 
 const moveAssets = async () => {
-  return gulp.src("src/assets/*.png").pipe(gulp.dest("dist/assets"));
+  return gulp.src(["src/assets/*.png", "src/assets/*.ico"]).pipe(gulp.dest("dist/assets"));
 };
 
 const minifyCSS = async () => {
